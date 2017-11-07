@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="{{ static_url('css/materialize.min.css') }}"  media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="{{ static_url('css/style.css') }}">
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body>
+
+
+  <div class="container  ">
+    <div class="row ">
+      <div class="col s12 xl12 center-align">
+      <h3>Test version</h3>
+
+
+        <form action="get">
+          <div class="file-field input-field card-panel teal light-green lighten-5">
+            <div class="btn btn-floating btn-large cyan puls z-depth-5">
+              <span>load</span>
+              <input type="file" id="fileaddToPreview">
+            </div>
+            <div class="file-path-wrapper">
+              <input class="file-path validate" type="text">
+            </div>
+          </div>
+        </form>
+
+
+<a class="waves-effect waves-light btn cyan puls" id="addToPreview">add to text preview</a>
+
+
+        <div class="row">
+
+
+
+          <form class="col s12 ">
+
+            <div class="row ">
+
+              <div class="input-field col s12 lime lighten-4" id="display">
+
+                <textarea id="textarea1" class="materialize-textarea"></textarea>
+                <label for="textarea1">Text preview</label>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="row  results">
+          <form class="col s12">
+
+            <div class="row">
+              <div class="input-field col s12 lime lighten-3" >
+                <textarea id="textarea1" class="materialize-textarea"></textarea>
+                <label for="textarea1">Results</label>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        
+
+        
+       
+      </div>
+    </div>
+  </div> 
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="{{ static_url('js/materialize.min.js') }}"></script>
+  <script type="text/javascript"  src="{{ static_url('js/script.js') }}"></script>
+</body>
+</html>
